@@ -1,4 +1,4 @@
-pip install langchain_experimental.agents langchain.callbacks langchain_google_genai.chat_models google.generativeai
+!pip install langchain_experimental.agents langchain.callbacks langchain_google_genai.chat_models google.generativeai
 
 # from langchain.agents import AgentType
 from langchain_experimental.agents import create_pandas_dataframe_agent
