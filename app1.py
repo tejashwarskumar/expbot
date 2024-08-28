@@ -45,20 +45,24 @@ def load_data(uploaded_file):
 st.set_page_config(page_title="Exp Bot")
 st.title("Exp Bot")
 
-uploaded_file = st.file_uploader(
-    "Upload a Data file",
-    type=list(file_formats.keys()),
-    help="Various File formats are supported",
-    on_change=clear_submit,
-)
+# uploaded_file = st.file_uploader(
+#     "Upload a Data file",
+#     type=list(file_formats.keys()),
+#     help="Various File formats are supported",
+#     on_change=clear_submit,
+# )
 
-if not uploaded_file:
-    st.warning("Upload the file to analyze")
+# if not uploaded_file:
+#     st.warning("Upload the file to analyze")
 
-if uploaded_file:
-    df = load_data(uploaded_file)
-    df2 = load_data("Exp Bot Success Metrics.xlsx")
-    df3 = pd.merge(df, df2, on=['Experiment Title', 'Iteration'])
+# if uploaded_file:
+#     df = load_data(uploaded_file)
+#     df2 = load_data("Exp Bot Success Metrics.xlsx")
+#     df3 = pd.merge(df, df2, on=['Experiment Title', 'Iteration'])
+
+df = load_data("TPre TfW Experiments.csv")
+df2 = load_data("Exp Bot Success Metrics.xlsx")
+df3 = pd.merge(df, df2, on=['Experiment Title', 'Iteration'])
 
 if "messages" not in st.session_state or st.sidebar.button("Clear conversation history"):
     st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you?"}]
@@ -70,12 +74,16 @@ if prompt := st.chat_input(placeholder="Enter your query"):
     st.session_state.messages.append({"role": "user", "content": prompt})
     st.chat_message("user").write(prompt)
 
+    if "success metric" in prompt:
+        df_to_use = df2
+    else:
+        df_to_use = df
 
     llm = ChatGoogleGenerativeAI(model="gemini-pro", temperature=0.2, streaming=True)
 
     pandas_df_agent = create_pandas_dataframe_agent(
         llm,
-        df3,
+        df_to_use,
         verbose=True,
         agent_type="zero-shot-react-description",
         handle_parsing_errors=True,
