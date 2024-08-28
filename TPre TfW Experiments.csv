@@ -1,0 +1,132 @@
+﻿"Experiment Title","PM Owner","EM Owner","DS Owner","Experiment Date (Estimate)","Status","Experiment Plan","Expt ADO Link","Notes","Scorecard Link","Success","Control Flight ID","Treatment Flight ID","Iteration","Ring","Client Type","Timeline","Experiment specific metrics (Control)","Experiment specific metrics (Treatment)","MAU","CTR"
+"Try Premium now vs. Unlock Premium","Margi Desai","Ricardo Espinoza Rodríguez","Alexandre Matos Martins","9/4/2023","Shipped","https://microsoft-my.sharepoint-df.com/:p:/p/margidesai/ET3dFcVg2KhBmX6vxKfC4mQBXJ9aek0UO0S9AW-4a-qJDg?e=JJ218N",,"+36% CTR Lift",,"True","P-E-1167569-C3-3","P-E-1167569-4-3","4","General","Desktop, Web","14","1. Users who saw the button -49139
+
+3. Users who started the trial-152
+4. Users who are active on Teams Premium-161","1. Users who saw the button - 559,744
+2. Users who clicked on the button-4480
+3. Users who started the trial-190
+4. Users who are active on Teams Premium-171","5.70%","36.00%"
+"Recap coachmark","Margi Desai","Ricardo Espinoza Rodríguez","Alexandre Matos Martins","12/5/2023","Need to re-run","https://microsoft-my.sharepoint-df.com/:p:/p/margidesai/ET3dFcVg2KhBmX6vxKfC4mQBXJ9aek0UO0S9AW-4a-qJDg?e=JJ218N",,"Summary:
+No stat sign change in Recap MAU. Is probable that a key reason is that not enough users saw the Coachmark.
+
+Recommendation:
+Re-launch Experiment with Coachmark showing on chat
+Possibly increase frequency of  displaying the Coachmark","https://exp.microsoft.com/scorecard?stepId=891d53b8-4a78-4e40-902c-9e0987b9c32f&workspaceId=54cff10f-57ce-478f-85f7-043989070ad7","False","P-E-1168978-C3-3","P-E-1168978-4-3","3","Ring 3","Desktop, Web","14","1. Users who saw the button - 561,354
+2. Users who saw the coachmark-4298
+3. Users who are active on Teams Premium-161","1. Users who saw the button - 559,744
+2. Users who clicked on the button-4480
+3. Users who started the trial-190
+4. Users who are active on Teams Premium-171","8.11%","12.30%"
+"FRE modal","Margi Desai","Ricardo Espinoza Rodríguez","Alexandre Matos Martins","12/5/2023","Need to re-run","https://microsoft-my.sharepoint-df.com/:p:/p/margidesai/ET3dFcVg2KhBmX6vxKfC4mQBXJ9aek0UO0S9AW-4a-qJDg?e=JJ218N",,"Summary:
+No stat sign change in Watermark, Recap, LTC or Overall MAU. ? From Showing FRE vs not Showing. But the reason is that not enough users saw the FRE to measure the impact
+
+Recommendation:
+Having an FRE will always be a better experience for the Users
+But we should experiment on different versions of FREs
+
+1.empty (102): They are shown the FRE modal
+2. OpenFollowUpSurface3 (64): They are shown the FRE modal and they click on the ""Got it"" button
+3. esp-dialog-dismiss-button (36): They are shown the FRE modal and they close the FRE modal using the close button at the top right of the modal
+
+So, we can interpret that 102 users were shown the FRE.","https://exp.microsoft.com/scorecard?stepId=49b49c9a-637d-44cb-aff0-bafc78040431&workspaceId=54cff10f-57ce-478f-85f7-043989070ad7","False","P-E-1168998-C3-3","P-E-1168998-4-3","3","Ring 3","Desktop, Web","14","1. Users who saw the button - 561,354
+2. Users who clicked on the button-3165
+3. Users who started the trial-179
+4. Users who are active on Teams Premium-161","1. Users who saw the button - 559,744
+2. Users who clicked on the button-4480
+3. Users who started the trial-190
+4. Users who are active on Teams Premium-171","7.98%","7.80%"
+"Unlock Premium copy","Margi Desai","Ricardo Espinoza Rodríguez","Alexandre Matos Martins","2/12/2024","Shipped","https://microsoft-my.sharepoint-df.com/:p:/p/margidesai/ET3dFcVg2KhBmX6vxKfC4mQBXJ9aek0UO0S9AW-4a-qJDg?e=JJ218N",,"Summary:
+Both New variations perform better in terms of getting more Users to start a Trial. But the version with “Free” does slightly better
+
+Recommendation:
+Set the “Try Premium for Free” as the default
+Do further experiments on the copy, because there seems to be more untapped opportunity. Until new variations will not show any improvements
+
+Users-Who-Started-Trial / Users-Who-Saw = 38.81% i.e. +46% Lift",,"True","P-E-1168998-C3-3","P-E-1168998-4-3","4","General","Desktop, Web","14","1. Users who saw the button - 561,354
+2. Users who clicked on the button-3145
+3. Users who started the trial-162
+4. Users who are active on Teams Premium-150","1. Users who saw the button - 559,744
+2. Users who clicked on the button-4480
+3. Users who started the trial-190
+4. Users who are active on Teams Premium-171","23.00%","46.00%"
+"Unlock Premium copy","Margi Desai","Ricardo Espinoza Rodríguez","Alexandre Matos Martins","2/12/2024","Shipped","https://microsoft-my.sharepoint-df.com/:p:/p/margidesai/ET3dFcVg2KhBmX6vxKfC4mQBXJ9aek0UO0S9AW-4a-qJDg?e=JJ218N",,"Summary:
+Both New variations perform better in terms of getting more Users to start a Trial. But the version with “Free” does slightly better
+
+Recommendation:
+Set the “Try Premium for Free” as the default
+Do further experiments on the copy, because there seems to be more untapped opportunity. Until new variations will not show any improvements
+
+Users-Who-Started-Trial / Users-Who-Saw = 36.96% i.e +39% Lift",,"True","P-E-1168998-C3-3","P-E-1168998-4-3","4","General","Desktop, Web","14",,,"23.40%","39.00%"
+"Styling for CTA button","Margi Desai","Ricardo Espinoza Rodríguez","Alexandre Matos Martins","3/21/2024","Shipped","https://microsoft-my.sharepoint-df.com/:p:/p/margidesai/ET3dFcVg2KhBmX6vxKfC4mQBXJ9aek0UO0S9AW-4a-qJDg?e=JJ218N",,"Summary:
+Experiment %235: Gradient Border experiment is Successful (Lift of +4.23%)
+Adding the gradient border leads to more clicks
+
+Recommendation
+1. Go live
+There's more low hanging fruit: color the gem 💎. I suggested long time ago to change UI to get attention to that button. See that a very subtle little color change makes a difference (even if takes long to understand). Follow-up: add more attention to it with design and we will get more conversion.
+
++4.23% Lift","https://exp.microsoft.com/scorecard?stepId=c5bb7aea-80d1-494b-a48d-332df2066bc0&workspaceId=54cff10f-57ce-478f-85f7-043989070ad7","True","P-E-1262782-C1-3","P-E-1262782-2-3","3","General","Desktop, Web","1","1. Users who saw the button - 561,354
+2. Users who clicked on the button-4298
+3. Users who started the trial-179
+4. Users who are active on Teams Premium-161","1. Users who saw the button - 559,744
+2. Users who clicked on the button-4480
+3. Users who started the trial-190
+4. Users who are active on Teams Premium-171","7.30%","4.50%"
+"Styling for CTA button","Margi Desai","Ricardo Espinoza Rodríguez","Alexandre Matos Martins","3/21/2024","Shipped","https://microsoft-my.sharepoint-df.com/:p:/p/margidesai/ET3dFcVg2KhBmX6vxKfC4mQBXJ9aek0UO0S9AW-4a-qJDg?e=JJ218N",,,,"True","P-E-1262782-C1-4","P-E-1262782-2-4","4","General","Desktop, Web","7",,,"7.43%","4.12%"
+"Styling for CTA button","Margi Desai","Ricardo Espinoza Rodríguez","Alexandre Matos Martins","3/21/2024","Shipped","https://microsoft-my.sharepoint-df.com/:p:/p/margidesai/ET3dFcVg2KhBmX6vxKfC4mQBXJ9aek0UO0S9AW-4a-qJDg?e=JJ218N",,,,"True","P-E-1262782-C1-5","P-E-1262782-2-5","5","General","Desktop, Web","14","1. Users who saw the button - 561,354
+2. Users who clicked on the button-4298
+3. Users who started the trial-179
+4. Users who are active on Teams Premium-161","1. Users who saw the button - 559,744
+2. Users who clicked on the button-4480
+3. Users who started the trial-190
+4. Users who are active on Teams Premium-171","7.21%","4.23%"
+"Trial optimization","Margi Desai","Ricardo Espinoza Rodríguez","Alexandre Matos Martins","3/27/2024","Shipped","https://microsoft-my.sharepoint-df.com/:p:/p/margidesai/ET3dFcVg2KhBmX6vxKfC4mQBXJ9aek0UO0S9AW-4a-qJDg?e=JJ218N",,"Summary:
+Treatment did better
+
+Recommendation:
+Go live with Treatment 
+
+This experiment measures a change in the flow. We are removing steps from the Trial Sign-up flow. To the measure it:
+ •  Start of experiment is when: users click on 'Unlock Premium' (until this point in the flow everything should be the same for both control and treatment)
+ •  End of experiment is how many Users ""Start Trial""
+  
+Treatment will always win, 100% conversion
+
+But is essential to make sure, that this change does not introduce any other regression. – We did not see any other negative impact in this experiment.
+
+Furthermore, we ran extra validation on the final impact on Active Users, and indeed Treatment saw an increase of 35% more Teams Premium active users.","https://exp.microsoft.com/scorecard?stepId=96efefe2-32f3-490b-aef0-3faddd23a8be&workspaceId=54cff10f-57ce-478f-85f7-043989070ad7","True","P-E-1262782-C1-3","P-E-1262782-2-3","4","General","Desktop, Web","14","1. Users who saw the button - 561,354
+2. Users who clicked on the button-4298
+3. Users who started the trial-179
+4. Users who are active on Teams Premium-161","1. Users who saw the button - 559,744
+2. Users who clicked on the button-4480
+3. Users who started the trial-190
+4. Users who are active on Teams Premium-171","35.00%","100.00%"
+"Try Premium now button above fold","Margi Desai","Ricardo Espinoza Rodríguez","Alexandre Matos Martins","3/22/2024","Shipped","https://microsoft-my.sharepoint-df.com/:p:/p/margidesai/ET3dFcVg2KhBmX6vxKfC4mQBXJ9aek0UO0S9AW-4a-qJDg?e=JJ218N",,"Summary:
+New variation (in this case Control) performs better in terms of CTR  (+20.2% Lift)
+
+Recommendation
+Adopt the “above the fold” version to 100% users
+
++20.2% Lift","https://exp.microsoft.com/scorecard?stepId=82554a82-703b-4fcd-8472-aac733a51c7e&workspaceId=54cff10f-57ce-478f-85f7-043989070ad7","True","P-E-1267570-C1-3","P-E-1267570-2-3","3","General","Desktop, Web","1","1. Users who saw the button - 67871
+2. Users who clicked on the button-463","1. Users who saw the button - 66480
+2. Users who clicked on the button-400","12.30%","18.10%"
+"Try Premium now button above fold","Margi Desai","Ricardo Espinoza Rodríguez","Alexandre Matos Martins","3/22/2024","Shipped","https://microsoft-my.sharepoint-df.com/:p:/p/margidesai/ET3dFcVg2KhBmX6vxKfC4mQBXJ9aek0UO0S9AW-4a-qJDg?e=JJ218N",,,,"True","P-E-1267570-C1-4","P-E-1267570-2-4","4","General","Desktop, Web","7",,,"12.23%","19.78%"
+"Try Premium now button above fold","Margi Desai","Ricardo Espinoza Rodríguez","Alexandre Matos Martins","3/22/2024","Shipped","https://microsoft-my.sharepoint-df.com/:p:/p/margidesai/ET3dFcVg2KhBmX6vxKfC4mQBXJ9aek0UO0S9AW-4a-qJDg?e=JJ218N",,,,"True","P-E-1267570-C1-5","P-E-1267570-2-5","5","General","Desktop, Web","14","1. Users who saw the button-67871
+2. Users who clicked on the button-463","1. Users who saw the button-459,536
+2. Users who clicked on the button-400","13.45%","20.20%"
+"Obscured speaker bars","Margi Desai","Ricardo Espinoza Rodríguez","Alexandre Matos Martins",,"Blocked","https://microsoft-my.sharepoint-df.com/:p:/p/margidesai/ET3dFcVg2KhBmX6vxKfC4mQBXJ9aek0UO0S9AW-4a-qJDg?e=JJ218N",,,,"False",,,,,,,,,,
+"AI notes sneak peak","Margi Desai","Ricardo Espinoza Rodríguez","Alexandre Matos Martins",,"Experiment Design Phase","https://microsoft-my.sharepoint-df.com/:p:/p/margidesai/ET3dFcVg2KhBmX6vxKfC4mQBXJ9aek0UO0S9AW-4a-qJDg?e=JJ218N",,,,"False",,,,,,,,,,
+"LTC freebie experiment","Margi Desai","Ricardo Espinoza Rodríguez","Alexandre Matos Martins",,"Experiment Design Phase","https://microsoft-my.sharepoint-df.com/:p:/p/margidesai/ET3dFcVg2KhBmX6vxKfC4mQBXJ9aek0UO0S9AW-4a-qJDg?e=JJ218N",,,,"False",,,,,,,,,,
+"In-meeting coachmark to turn on recording/transcription","Margi Desai","Ricardo Espinoza Rodríguez","Alexandre Matos Martins","4/7/2024","Need to re-run","https://microsoft-my.sharepoint-df.com/:p:/p/margidesai/ET3dFcVg2KhBmX6vxKfC4mQBXJ9aek0UO0S9AW-4a-qJDg?e=JJ218N",,"Summary: 
+Experiment %2311 is Inconclusive (as per the stat sign calculation), not enough traffic
+ 
+Next Step:
+We need to run Experiment %2311 with a bigger cohorts
+
+The number of users who are exposed to the coachmark is similar in both Control and Treatment (2660 in Control and 2766 in Treatment) as observed in the delta between them which is ~4%.
+ 
+Overall, the number of users eligible to see the coachmark is also low due to the experiment running in Ring 3. We should be able to see a larger number of users appearing here when we run the experiment in Ring 4.
+
+Insights: We see that there is no statistically significant difference between the Treatment and Control users who were eligible to see the coachmark and became Recap Active.
+
+Additionally, we can confirm that the experiment was rolled out to Ring 3 with a 50/50 allocation between the control and treatment groups.",,"False","P-E-1267569-C3-3","P-E-1267569-4-3","3","Ring 3","Desktop, Web","14",,,"2.30%","4.00%"
