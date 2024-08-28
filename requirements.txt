@@ -2,3 +2,4 @@ langchain-experimental
 langchain
 langchain-google-genai
 google-generativeai
+openpyxl
