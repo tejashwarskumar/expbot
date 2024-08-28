@@ -1,4 +1,4 @@
-langchain_experimental.agents
-langchain.callbacks
-langchain_google_genai.chat_models
-google.generativeai
+langchain-experimental
+langchain
+langchain-google-genai
+google-generativeai
