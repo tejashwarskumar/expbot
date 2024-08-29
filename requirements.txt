@@ -4,5 +4,4 @@ langchain-google-genai
 google-generativeai
 openpyxl
 tabulate
-nltk
 scikit-learn
