@@ -85,20 +85,30 @@ if prompt := st.chat_input(placeholder="Enter your query"):
     st.chat_message("user").write(prompt)
 
     if case == "Advisor":
-        paragraph = """4 experiments led to an increase in TPre trial initiations. 7 copy experiments were rolled out in July. The average experiment length/duration for an experiment to see statistically significant results is 14 days. The commonly used success metrics used by TPre experimenters are "Users clicking on the button" and "Users who started the trial". The guidelines for identifying relevant success metrics for your experiment are that they should align with business goals, be quantifiable and measurable, be sensitive to changes and consistent across flights. The common guardrail conditions for growth experiments are that the Core metrics should not exhibit any regressions in Teams features. To design an experiment to test the performance of x copy variants the success metrics should be Click Through Rate for the feature copy. Even if the metrics show no negative movements, the experiment can be considered as successful only if the movement in the metrics is statistically significant."""
+        def read_qa_file(file_path):
+            questions = []
+            answers = []
+            
+            with open(file_path, 'r') as file:
+                lines = file.readlines()
+                
+                for i in range(0, len(lines), 2):
+                    questions.append(lines[i].strip())
+                    answers.append(lines[i+1].strip())
+            
+            return questions, answers
         
-        sentences = paragraph.split('.')
-        sentences = [x.strip(' ') for x in sentences]
-        sentences = sentences[:-1]
+        file_path = 'qa.txt'
+        questions, answers = read_qa_file(file_path)
 
         vectorizer = TfidfVectorizer()
-        tfidf_matrix = vectorizer.fit_transform(sentences)
+        tfidf_matrix = vectorizer.fit_transform(questions)
 
         def find_best_answer(question):
             question_tfidf = vectorizer.transform([question])
             similarities = cosine_similarity(question_tfidf, tfidf_matrix).flatten()
             best_match_index = similarities.argmax()
-            return sentences[best_match_index]
+            return answers[best_match_index]
 
         best_answer = find_best_answer(prompt)
         with st.chat_message("assistant"):
