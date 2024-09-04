@@ -9,12 +9,15 @@ genai.configure(api_key="AIzaSyDwmsQ-9hJTZV3ig0jioi2ZIAZxK3x9ras")
 os.environ["GOOGLE_API_KEY"] = "AIzaSyDwmsQ-9hJTZV3ig0jioi2ZIAZxK3x9ras"
 import streamlit as st
 import pandas as pd
+import numpy as np
 import os
 # import nltk
 # nltk.download('punkt')
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
+# from sklearn.metrics.pairwise import cosine_similarity
 import time
+import pickle
+import faiss
 
 file_formats = {
     "csv": pd.read_csv,
@@ -85,29 +88,25 @@ if prompt := st.chat_input(placeholder="Enter your query"):
     st.chat_message("user").write(prompt)
 
     if case == "Advisor":
-        def read_qa_file(file_path):
-            questions = []
-            answers = []
-            
-            with open(file_path, 'r') as file:
-                lines = file.readlines()
-                
-                for i in range(0, len(lines), 2):
-                    questions.append(lines[i].strip())
-                    answers.append(lines[i+1].strip())
-            
-            return questions, answers
+        # Load the TF-IDF model
+        with open('tfidf_model.pkl', 'rb') as model_file:
+            vectorizer = pickle.load(model_file)
         
-        file_path = 'qa.txt'
-        questions, answers = read_qa_file(file_path)
+        # Load the FAISS index
+        index = faiss.read_index('faiss_index.idx')
+        
+        # Load the questions and answers
+        with open('qa_data.pkl', 'rb') as qa_file:
+            qa_data = pickle.load(qa_file)
+            questions = qa_data['questions']
+            answers = qa_data['answers']
 
-        vectorizer = TfidfVectorizer()
-        tfidf_matrix = vectorizer.fit_transform(questions)
-
-        def find_best_answer(question):
-            question_tfidf = vectorizer.transform([question])
-            similarities = cosine_similarity(question_tfidf, tfidf_matrix).flatten()
-            best_match_index = similarities.argmax()
+        def find_best_answer(user_question):
+            # Transform the user's question into a vector
+            user_vector = vectorizer.transform([user_question]).toarray().astype(np.float32)
+            # Search for the nearest neighbor in the FAISS index
+            _, I = index.search(user_vector, 1)  # `1` is the number of nearest neighbors to return
+            best_match_index = I[0][0]
             return answers[best_match_index]
 
         best_answer = find_best_answer(prompt)
