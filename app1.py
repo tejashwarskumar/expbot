@@ -76,7 +76,7 @@ if "messages" not in st.session_state or st.sidebar.button("Clear conversation h
     st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you?"}]
 
 # Dropdown for case selection
-case = st.sidebar.selectbox("Choose bot module:", ["Advisor", "Query Experiments"])
+case = st.sidebar.selectbox("Choose bot module:", ["Advisor", "Query Experiments", "Post-hoc Analysis", "Exp Design Review"])
 
 # Display chat history
 for msg in st.session_state.messages:
