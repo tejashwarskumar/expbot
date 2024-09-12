@@ -76,7 +76,9 @@ if "messages" not in st.session_state or st.sidebar.button("Clear conversation h
     st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you?"}]
 
 # Dropdown for case selection
-case = st.sidebar.selectbox("Choose bot module:", ["Advisor", "Query Experiments", "Post-hoc Analysis", "Exp Design Review"])
+case = st.sidebar.selectbox("Choose bot module:", ["Exp FAQs", "Post-Hoc Analytics", "Planning & Design Support", "Execution Support"])
+
+# Exp FAQs, Post-Hoc Analytics, Planning & Design Support, Execution Support
 
 # Display chat history
 for msg in st.session_state.messages:
@@ -87,7 +89,7 @@ if prompt := st.chat_input(placeholder="Enter your query"):
     st.session_state.messages.append({"role": "user", "content": prompt})
     st.chat_message("user").write(prompt)
 
-    if case == "Advisor":
+    if case == "Exp FAQs":
         # Load the TF-IDF model
         with open('tfidf_model.pkl', 'rb') as model_file:
             vectorizer = pickle.load(model_file)
@@ -115,7 +117,7 @@ if prompt := st.chat_input(placeholder="Enter your query"):
             st.session_state.messages.append({"role": "assistant", "content": best_answer})
             st.write(best_answer)
         
-    elif case == "Query Experiments":
+    elif case == "Post-Hoc Analytics":
         if "success metric" in prompt:
             df_to_use = df2
         else:
@@ -137,3 +139,7 @@ if prompt := st.chat_input(placeholder="Enter your query"):
             response = pandas_df_agent.run(st.session_state.messages, callbacks=[st_cb])
             st.session_state.messages.append({"role": "assistant", "content": response})
             st.write(response)
+
+    else:
+        with st.chat_message("assistant"):
+            st.write("🚧 This functionality is under construction 🚧")
