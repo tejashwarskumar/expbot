@@ -1,7 +1,7 @@
 How many experiments led to an increase in Tpre trial initiations?
 4 experiments led to an increase in TPre trial initiations.
 How many copy experiments were rolled out in Sep?
-7 copy experiments were rolled out in July.
+7 copy experiments were rolled out in Sep.
 What is the average experiment length/duration for an experiment to see statistically significant results?
 The average experiment length/duration for an experiment to see statistically significant results is 14 days.
 What are the commonly used success metrics used by TPre experimenters?
