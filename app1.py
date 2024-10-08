@@ -78,8 +78,6 @@ if "messages" not in st.session_state or st.sidebar.button("Clear conversation h
 # Dropdown for case selection
 case = st.sidebar.selectbox("Choose bot module:", ["Exp FAQs", "Post-Hoc Analytics", "Planning & Design Support", "Execution Support"])
 
-# Exp FAQs, Post-Hoc Analytics, Planning & Design Support, Execution Support
-
 # Display chat history
 for msg in st.session_state.messages:
     st.chat_message(msg["role"]).write(msg["content"])
@@ -136,7 +134,7 @@ if prompt := st.chat_input(placeholder="Enter your query"):
     
         with st.chat_message("assistant"):
             st_cb = StreamlitCallbackHandler(st.container(), expand_new_thoughts=False)
-            response = pandas_df_agent.run(st.session_state.messages, callbacks=[st_cb])
+            response = pandas_df_agent.run([msg["content"] for msg in st.session_state.messages], callbacks=[st_cb])
             st.session_state.messages.append({"role": "assistant", "content": response})
             st.write(response)
 
