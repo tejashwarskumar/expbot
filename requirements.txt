@@ -2,4 +2,5 @@ langchain_experimental
 langchain
 langchain_google_genai
 google
-faiss
+scikit-learn
+faiss-cpu
