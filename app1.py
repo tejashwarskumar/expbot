@@ -69,7 +69,7 @@ st.title("Exp Bot")
 #     df3 = pd.merge(df, df2, on=['Experiment Title', 'Iteration'])
 
 df = load_data("TPre TfW Experiments.csv")
-df2 = load_data("Exp_Bot_Success_Metrics.xlsx")
+df2 = load_data("Exp_Bot_Success_Metrics.csv")
 df3 = pd.merge(df, df2, on=['Experiment Title', 'Iteration'])
 
 if "messages" not in st.session_state or st.sidebar.button("Clear conversation history"):
