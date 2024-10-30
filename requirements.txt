@@ -1,0 +1,7 @@
+langchain_experimental
+langchain
+langchain_google_genai
+google
+sklearn
+pickle
+faiss
