@@ -4,3 +4,4 @@ langchain_google_genai
 google
 scikit-learn
 faiss-cpu
+tabulate
