@@ -2,53 +2,53 @@
 Feature A vs. Feature B,John Doe III,Jane Doe Jr.,John Jane Sr. Jr.,9/4/2023,Shipped,https://microsoft-my.sharepoint-df.com/:p:/p/test,,TRUE,4,General,"Desktop, Web",14,"1. Users who saw the button -49139
 
 3. Users who started the trial-152
-4. Users who are active on Teams Premium-161","1. Users who saw the button - 559,744
+4. Users who are active on feature-161","1. Users who saw the button - 559,744
 2. Users who clicked on the button-4480
 3. Users who started the trial-190
-4. Users who are active on Teams Premium-171",5.70%,36.00%
+4. Users who are active on feature-171",5.70%,36.00%
 Feature Coachmark A,John Doe III,Jane Doe Jr.,John Jane Sr. Jr.,12/5/2023,Need to re-run,https://microsoft-my.sharepoint-df.com/:p:/p/test,https://exp.microsoft.com/scorecard?stepId=test,FALSE,3,Ring 3,"Desktop, Web",14,"1. Users who saw the button - 561,354
 2. Users who saw the coachmark-4298
-3. Users who are active on Teams Premium-161","1. Users who saw the button - 559,744
+3. Users who are active on feature-161","1. Users who saw the button - 559,744
 2. Users who clicked on the button-4480
 3. Users who started the trial-190
-4. Users who are active on Teams Premium-171",8.11%,12.30%
+4. Users who are active on feature-171",8.11%,12.30%
 FRE Modal,John Doe III,Jane Doe Jr.,John Jane Sr. Jr.,12/5/2023,Need to re-run,https://microsoft-my.sharepoint-df.com/:p:/p/test,https://exp.microsoft.com/scorecard?stepId=test,FALSE,3,Ring 3,"Desktop, Web",14,"1. Users who saw the button - 561,354
 2. Users who clicked on the button-3165
 3. Users who started the trial-179
-4. Users who are active on Teams Premium-161","1. Users who saw the button - 559,744
+4. Users who are active on feature-161","1. Users who saw the button - 559,744
 2. Users who clicked on the button-4480
 3. Users who started the trial-190
-4. Users who are active on Teams Premium-171",7.98%,7.80%
+4. Users who are active on feature-171",7.98%,7.80%
 Unlock Premium Features,John Doe III,Jane Doe Jr.,John Jane Sr. Jr.,2/12/2024,Shipped,https://microsoft-my.sharepoint-df.com/:p:/p/test,,TRUE,4,General,"Desktop, Web",14,"1. Users who saw the button - 561,354
 2. Users who clicked on the button-3145
 3. Users who started the trial-162
-4. Users who are active on Teams Premium-150","1. Users who saw the button - 559,744
+4. Users who are active on feature-150","1. Users who saw the button - 559,744
 2. Users who clicked on the button-4480
 3. Users who started the trial-190
-4. Users who are active on Teams Premium-171",23.00%,46.00%
+4. Users who are active on feature-171",23.00%,46.00%
 Unlock Premium Features,John Doe III,Jane Doe Jr.,John Jane Sr. Jr.,2/12/2024,Shipped,https://microsoft-my.sharepoint-df.com/:p:/p/test,https://exp.microsoft.com/scorecard?stepId=test,TRUE,4,General,"Desktop, Web",14,,,23.40%,39.00%
 CTA Variant v1,John Doe III,Jane Doe Jr.,John Jane Sr. Jr.,3/21/2024,Shipped,https://microsoft-my.sharepoint-df.com/:p:/p/test,https://exp.microsoft.com/scorecard?stepId=test,TRUE,3,General,"Desktop, Web",1,"1. Users who saw the button - 561,354
 2. Users who clicked on the button-4298
 3. Users who started the trial-179
-4. Users who are active on Teams Premium-161","1. Users who saw the button - 559,744
+4. Users who are active on feature-161","1. Users who saw the button - 559,744
 2. Users who clicked on the button-4480
 3. Users who started the trial-190
-4. Users who are active on Teams Premium-171",7.30%,4.50%
+4. Users who are active on feature-171",7.30%,4.50%
 CTA Variant v1,John Doe III,Jane Doe Jr.,John Jane Sr. Jr.,3/21/2024,Shipped,https://microsoft-my.sharepoint-df.com/:p:/p/test,https://exp.microsoft.com/scorecard?stepId=test,TRUE,4,General,"Desktop, Web",7,,,7.43%,4.12%
 CTA Variant v1,John Doe III,Jane Doe Jr.,John Jane Sr. Jr.,3/21/2024,Shipped,https://microsoft-my.sharepoint-df.com/:p:/p/test,,TRUE,5,General,"Desktop, Web",14,"1. Users who saw the button - 561,354
 2. Users who clicked on the button-4298
 3. Users who started the trial-179
-4. Users who are active on Teams Premium-161","1. Users who saw the button - 559,744
+4. Users who are active on feature-161","1. Users who saw the button - 559,744
 2. Users who clicked on the button-4480
 3. Users who started the trial-190
-4. Users who are active on Teams Premium-171",7.21%,4.23%
+4. Users who are active on feature-171",7.21%,4.23%
 License Trial Optimization,John Doe III,Jane Doe Jr.,John Jane Sr. Jr.,3/27/2024,Shipped,https://microsoft-my.sharepoint-df.com/:p:/p/test,,TRUE,4,General,"Desktop, Web",14,"1. Users who saw the button - 561,354
 2. Users who clicked on the button-4298
 3. Users who started the trial-179
-4. Users who are active on Teams Premium-161","1. Users who saw the button - 559,744
+4. Users who are active on feature-161","1. Users who saw the button - 559,744
 2. Users who clicked on the button-4480
 3. Users who started the trial-190
-4. Users who are active on Teams Premium-171",35.00%,100.00%
+4. Users who are active on feature-171",35.00%,100.00%
 Try Premium Features,John Doe III,Jane Doe Jr.,John Jane Sr. Jr.,3/22/2024,Shipped,https://microsoft-my.sharepoint-df.com/:p:/p/test,,TRUE,3,General,"Desktop, Web",1,"1. Users who saw the button - 67871
 2. Users who clicked on the button-463","1. Users who saw the button - 66480
 2. Users who clicked on the button-400",12.30%,18.10%
