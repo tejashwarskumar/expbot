@@ -1,0 +1,76 @@
+Experiment Title,PM Owner,EM Owner,DS Owner,Experiment Date (Estimate),Progress,Experiment Plan,Expt ADO Link,Notes,Scorecard Link,Success,Analysis Details,Success Metrics
+Feature A vs. Feature B,John Doe III,Jane Doe Jr.,John Jane Sr. Jr.,9/4/2023,Shipped,https://microsoft-my.sharepoint-df.com/:p:/p/test,,,,TRUE,+36% CTR Lift,"1. Users who saw the button
+2. Users who clicked on the button"
+Feature Coachmark A,John Doe III,Jane Doe Jr.,John Jane Sr. Jr.,12/5/2023,Need to re-run,https://microsoft-my.sharepoint-df.com/:p:/p/test,,"Summary:
+No stat sign change in Recap MAU. Is probable that a key reason is that not enough users saw the Coachmark.
+
+Recommendation:
+Re-launch Experiment with Coachmark showing on chat
+Possibly increase frequency of  displaying the Coachmark",https://exp.microsoft.com/scorecard?stepId=test,FALSE,,"1. Users who saw the coachmark
+2. Users who clicked on the coachmark"
+FRE Modal,John Doe III,Jane Doe Jr.,John Jane Sr. Jr.,12/5/2023,Need to re-run,https://microsoft-my.sharepoint-df.com/:p:/p/test,,"Summary:
+No stat sign change in Watermark, Recap, LTC or Overall MAU. ? From Showing FRE vs not Showing. But the reason is that not enough users saw the FRE to measure the impact
+
+Recommendation:
+Having an FRE will always be a better experience for the Users
+But we should experiment on different versions of FREs",https://exp.microsoft.com/scorecard?stepId=test,FALSE,"1.empty (102): They are shown the FRE modal
+2. OpenFollowUpSurface3 (64): They are shown the FRE modal and they click on the ""Got it"" button
+3. esp-dialog-dismiss-button (36): They are shown the FRE modal and they close the FRE modal using the close button at the top right of the modal
+
+So, we can interpret that 102 users were shown the FRE.","1. Users who saw the modal
+2. Users who clicked on the modal"
+Unlock Premium Features,John Doe III,Jane Doe Jr.,John Jane Sr. Jr.,2/12/2024,Shipped,https://microsoft-my.sharepoint-df.com/:p:/p/test,,"Summary:
+Both New variations perform better in terms of getting more Users to start a Trial. But the version with “Free” does slightly better
+
+Recommendation:
+Set the “Try Premium for Free” as the default
+Do further experiments on the copy, because there seems to be more untapped opportunity. Until new variations will not show any improvements",,TRUE,"Treatment A: Users-Who-Started-Trial / Users-Who-Saw = 38.81% i.e. +46% Lift
+
+Treatment B: Users-Who-Started-Trial / Users-Who-Saw = 36.96% i.e +39% Lift","1. Users who saw the button
+2. Users who clicked on the button
+3. Users who started the trial"
+CTA Variant v1,John Doe III,Jane Doe Jr.,John Jane Sr. Jr.,3/21/2024,Shipped,https://microsoft-my.sharepoint-df.com/:p:/p/test,,"Summary:
+Experiment #5: Gradient Border experiment is Successful (Lift of +4.23%)
+Adding the gradient border leads to more clicks
+
+Recommendation
+1. Go live
+There's more low hanging fruit: color the gem 💎. I suggested long time ago to change UI to get attention to that button. See that a very subtle little color change makes a difference (even if takes long to understand). Follow-up: add more attention to it with design and we will get more conversion.",https://exp.microsoft.com/scorecard?stepId=test,TRUE,+4.23% Lift,"1. Users who saw the button
+2. Users who clicked on the button
+3. Users who started the trial
+4. Users who are active on Teams Premium"
+License Trial Optimization,John Doe III,Jane Doe Jr.,John Jane Sr. Jr.,3/27/2024,Shipped,https://microsoft-my.sharepoint-df.com/:p:/p/test,,"Summary:
+Treatment did better
+
+Recommendation:
+Go live with Treatment ",https://exp.microsoft.com/scorecard?stepId=test,TRUE,"This experiment measures a change in the flow. We are removing steps from the Trial Sign-up flow. To the measure it:
+ •  Start of experiment is when: users click on 'Unlock Premium' (until this point in the flow everything should be the same for both control and treatment)
+ •  End of experiment is how many Users ""Start Trial""
+  
+Treatment will always win, 100% conversion
+
+But is essential to make sure, that this change does not introduce any other regression. – We did not see any other negative impact in this experiment.
+
+Furthermore, we ran extra validation on the final impact on Active Users, and indeed Treatment saw an increase of 35% more Teams Premium active users.","1. Users who clicked the button
+2. Users who started the trial"
+Try Premium Features,John Doe III,Jane Doe Jr.,John Jane Sr. Jr.,3/22/2024,Shipped,https://microsoft-my.sharepoint-df.com/:p:/p/test,,"Summary:
+New variation (in this case Control) performs better in terms of CTR  (+20.2% Lift)
+
+Recommendation
+Adopt the “above the fold” version to 100% users",https://exp.microsoft.com/scorecard?stepId=test,TRUE,+20.2% Lift,"1. Users who saw the button
+2. Users who clicked on the button"
+Changed CTA button color,John Doe III,Jane Doe Jr.,John Jane Sr. Jr.,,Blocked,https://microsoft-my.sharepoint-df.com/:p:/p/test,,,,FALSE,,
+Feature Preview,John Doe III,Jane Doe Jr.,John Jane Sr. Jr.,,Experiment Design Phase,https://microsoft-my.sharepoint-df.com/:p:/p/test,,,,FALSE,,
+Freebie Feature,John Doe III,Jane Doe Jr.,John Jane Sr. Jr.,,Experiment Design Phase,https://microsoft-my.sharepoint-df.com/:p:/p/test,,,,FALSE,,
+Feature Coachmark B,John Doe III,Jane Doe Jr.,John Jane Sr. Jr.,4/7/2024,Need to re-run,https://microsoft-my.sharepoint-df.com/:p:/p/test,,"Summary: 
+Experiment #11 is Inconclusive (as per the stat sign calculation), not enough traffic
+ 
+Next Step:
+We need to run Experiment #11 with a bigger cohorts",,FALSE,"The number of users who are exposed to the coachmark is similar in both Control and Treatment (2660 in Control and 2766 in Treatment) as observed in the delta between them which is ~4%.
+ 
+Overall, the number of users eligible to see the coachmark is also low due to the experiment running in Ring 3. We should be able to see a larger number of users appearing here when we run the experiment in Ring 4.
+
+Insights: We see that there is no statistically significant difference between the Treatment and Control users who were eligible to see the coachmark and became Recap Active.
+
+Additionally, we can confirm that the experiment was rolled out to Ring 3 with a 50/50 allocation between the control and treatment groups.","1. Users who are eligible to see the coachmark
+2. Recap Active Users"
