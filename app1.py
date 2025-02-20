@@ -5,8 +5,8 @@ from langchain.callbacks.streamlit import StreamlitCallbackHandler
 from langchain_google_genai.chat_models import ChatGoogleGenerativeAI
 import google.generativeai as genai
 import os
-genai.configure(api_key="AIzaSyDwmsQ-9hJTZV3ig0jioi2ZIAZxK3x9ras")
-os.environ["GOOGLE_API_KEY"] = "AIzaSyDwmsQ-9hJTZV3ig0jioi2ZIAZxK3x9ras"
+genai.configure(api_key="AIzaSyBstPTDaXEUgh2nZuVf-Wa2nGV5sHkxmaw")
+os.environ["GOOGLE_API_KEY"] = "AIzaSyBstPTDaXEUgh2nZuVf-Wa2nGV5sHkxmaw"
 import streamlit as st
 import pandas as pd
 import numpy as np
