@@ -107,7 +107,7 @@ if prompt := st.chat_input(placeholder="Enter your query"):
 
     elif case == "Post-Hoc Analytics":
         df_to_use = df2 if "success metric" in prompt.lower() else df
-        llm = ChatGoogleGenerativeAI(model="gemini-pro", temperature=0.2, streaming=True)
+        llm = ChatGoogleGenerativeAI(model="gemini-pro-vision", temperature=0.2, streaming=True)
 
         pandas_df_agent = create_pandas_dataframe_agent(
             llm,
