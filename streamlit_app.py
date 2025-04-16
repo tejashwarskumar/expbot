@@ -88,34 +88,34 @@ if prompt := st.chat_input(placeholder="Enter your query"):
     st.chat_message("user").write(prompt)
 
     if case == "Exp FAQs":
-        with st.chat_message("assistant"):
-            st.write("🚧 This functionality is under construction 🚧")
-        # # Load the TF-IDF model
-        # with open('tfidf_model.pkl', 'rb') as model_file:
-        #     vectorizer = pickle.load(model_file)
-        
-        # # Load the FAISS index
-        # index = faiss.read_index('faiss_index.idx')
-        
-        # # Load the questions and answers
-        # with open('qa_data.pkl', 'rb') as qa_file:
-        #     qa_data = pickle.load(qa_file)
-        #     questions = qa_data['questions']
-        #     answers = qa_data['answers']
-
-        # def find_best_answer(user_question):
-        #     # Transform the user's question into a vector
-        #     user_vector = vectorizer.transform([user_question]).toarray().astype(np.float32)
-        #     # Search for the nearest neighbor in the FAISS index
-        #     _, I = index.search(user_vector, 1)  # `1` is the number of nearest neighbors to return
-        #     best_match_index = I[0][0]
-        #     return answers[best_match_index]
-
-        # best_answer = find_best_answer(prompt)
         # with st.chat_message("assistant"):
-        #     time.sleep(2)
-        #     st.session_state.messages.append({"role": "assistant", "content": best_answer})
-        #     st.write(best_answer)
+            # st.write("🚧 This functionality is under construction 🚧")
+        # Load the TF-IDF model
+        with open('tfidf_model.pkl', 'rb') as model_file:
+            vectorizer = pickle.load(model_file)
+        
+        # Load the FAISS index
+        index = faiss.read_index('faiss_index.idx')
+        
+        # Load the questions and answers
+        with open('qa_data.pkl', 'rb') as qa_file:
+            qa_data = pickle.load(qa_file)
+            questions = qa_data['questions']
+            answers = qa_data['answers']
+
+        def find_best_answer(user_question):
+            # Transform the user's question into a vector
+            user_vector = vectorizer.transform([user_question]).toarray().astype(np.float32)
+            # Search for the nearest neighbor in the FAISS index
+            _, I = index.search(user_vector, 1)  # `1` is the number of nearest neighbors to return
+            best_match_index = I[0][0]
+            return answers[best_match_index]
+
+        best_answer = find_best_answer(prompt)
+        with st.chat_message("assistant"):
+            time.sleep(2)
+            st.session_state.messages.append({"role": "assistant", "content": best_answer})
+            st.write(best_answer)
         
     elif case == "Post-Hoc Analytics":
         if "success metric" in prompt:
