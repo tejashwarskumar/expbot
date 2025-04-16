@@ -6,6 +6,7 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 
+import google.generativeai as genai
 from langchain_experimental.agents import create_pandas_dataframe_agent
 from langchain_google_genai.chat_models import ChatGoogleGenerativeAI
 from langchain.callbacks.streamlit import StreamlitCallbackHandler
