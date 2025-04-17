@@ -1,7 +1,7 @@
 langchain_experimental
 langchain
 langchain_google_genai
-google
+google-generativeai
 scikit-learn
 faiss-cpu
 tabulate
